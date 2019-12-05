@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5882AE3F-F638-442F-8C87-C69FEB22070C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>juego</RootNamespace>
+    <AssemblyName>juego</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textura.jpg" />
+    <None Include="Resources\rival.png" />
+    <None Include="Resources\Pueblo_Primavera_HGSS1.png" />
+    <None Include="Resources\zeptail_frente.png" />
+    <None Include="Resources\zeptail.png" />
+    <None Include="Resources\venusaur.png" />
+    <None Include="Resources\venausaur_frente.png" />
+    <None Include="Resources\totodile_frente.png" />
+    <None Include="Resources\totodile_espalda.png" />
+    <None Include="Resources\rafaga_planta.png" />
+    <None Include="Resources\pikachu_frente.png" />
+    <None Include="Resources\Pikachu_espalda_G6.png" />
+    <None Include="Resources\onda_electrica.png" />
+    <None Include="Resources\golpe.png" />
+    <None Include="Resources\fuego.png" />
+    <None Include="Resources\escenario.png" />
+    <None Include="Resources\electabuzz_frente.png" />
+    <None Include="Resources\electabuzz_espalda.png" />
+    <None Include="Resources\conbusquen_frente.png" />
+    <None Include="Resources\conbusquen_espalda.png" />
+    <None Include="Resources\charizard_frente.png" />
+    <None Include="Resources\charizad_espalda.png" />
+    <None Include="Resources\blastoises_frente.png" />
+    <None Include="Resources\blastoise.png" />
+    <None Include="Resources\batalla1.png" />
+    <None Include="Resources\batalla.png" />
+    <None Include="Resources\aro_de_fuego.png" />
+    <None Include="Resources\agua_Canon.png" />
+    <None Include="Resources\agua.png" />
+    <None Include="Resources\rayo.png" />
+    <None Include="Resources\movimientos %281%29.png" />
+    <None Include="Resources\paso_derecha_1.png" />
+    <None Include="Resources\movimientos-2.png %282%29.png" />
+    <None Include="Resources\movimientos-2.png %283%29.png" />
+    <None Include="Resources\movimientos-2.png %284%29.png" />
+    <None Include="Resources\movimientos-2.png %285%29.png" />
+    <None Include="Resources\movimientos-2.png %286%29.png" />
+    <None Include="Resources\movimientos-2.png %287%29.png" />
+    <None Include="Resources\movimientos-2.png %288%29.png" />
+    <None Include="Resources\movimientos-2.png %289%29.png" />
+    <None Include="Resources\paso_arriba_1.png" />
+    <None Include="Resources\movimientos-2.png %2811%29.png" />
+    <None Include="Resources\gary.png" />
+    <None Include="Resources\descarga.png" />
+    <None Include="Resources\moderno.jpg" />
+    <None Include="Resources\jardin.jpg" />
+    <None Include="Resources\l83377-training-stadium-pokemon-9861.png" />
+    <None Include="Resources\arriba.jpg" />
+    <None Include="Resources\game_over_PNG57.png" />
+    <None Include="Resources\game.jpg" />
+    <None Include="Resources\descarga1.png" />
+    <Content Include="Resources\movimientos-2.png %2810%29.png" />
+    <None Include="Resources\movimientos-2.png %2810%291.png" />
+    <None Include="Resources\pokemon.jpg" />
+    <None Include="Resources\otro_rival.png" />
+    <Content Include="Resources\Pueblo_Primavera_HGSS.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
