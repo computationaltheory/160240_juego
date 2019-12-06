@@ -127,8 +127,14 @@
   <data name="charizad_espalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\charizad_espalda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="blastoises_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blastoises_frente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="agua_Canon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agua_Canon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="movimientos-2.png (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\movimientos-2.png (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="descarga1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gary" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,6 +151,9 @@
   <data name="game_over_PNG57" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\game_over_PNG57.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="zeptail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zeptail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="movimientos-2.png (11)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\movimientos-2.png (11).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,8 +163,8 @@
   <data name="electabuzz_espalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\electabuzz_espalda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="agua_Canon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\agua_Canon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="otro_rival" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\otro_rival.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="conbusquen_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\conbusquen_frente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,14 +187,17 @@
   <data name="electabuzz_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\electabuzz_frente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="agua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="movimientos-2.png (10)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\movimientos-2.png (10)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rayo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rayo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="zeptail" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zeptail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="inicial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\inicial.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="batalla" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\batalla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,8 +211,8 @@
   <data name="blastoise" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blastoise.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="movimientos-2.png (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\movimientos-2.png (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="teclado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\teclado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="game" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\game.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,9 +226,6 @@
   <data name="l83377-training-stadium-pokemon-9861" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\l83377-training-stadium-pokemon-9861.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="descarga1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\descarga1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="pokemon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pokemon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -226,14 +235,17 @@
   <data name="totodile_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\totodile_frente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="flecha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flecha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="batalla1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\batalla1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="venusaur" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\venusaur.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="agua" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\agua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="golpe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\golpe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="jardin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jardin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -243,6 +255,9 @@
   </data>
   <data name="totodile_espalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\totodile_espalda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blastoises_frente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blastoises_frente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="movimientos-2.png (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\movimientos-2.png (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,8 +271,8 @@
   <data name="movimientos-2.png (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\movimientos-2.png (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="movimientos-2.png (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\movimientos-2.png (8).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="flechas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flechas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="movimientos (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\movimientos (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,8 +280,8 @@
   <data name="rival" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rival.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="golpe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\golpe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="movimientos-2.png (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\movimientos-2.png (8).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Pueblo_Primavera_HGSS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pueblo_Primavera_HGSS1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -274,7 +289,7 @@
   <data name="rafaga_planta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rafaga_planta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="otro_rival" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\otro_rival.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="teclas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\teclas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

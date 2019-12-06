@@ -47,6 +47,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -211,12 +212,23 @@
             this.label14.TabIndex = 16;
             this.label14.Text = "100";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.label12.Location = new System.Drawing.Point(174, 19);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(172, 31);
+            this.label12.TabIndex = 17;
+            this.label12.Text = "TURNO DE :";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::juego.Properties.Resources.textura;
             this.ClientSize = new System.Drawing.Size(523, 392);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.pictureBox3);
@@ -238,6 +250,7 @@
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             this.Load += new System.EventHandler(this.Form2_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form2_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form2_KeyUp);
@@ -269,5 +282,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label12;
     }
 }

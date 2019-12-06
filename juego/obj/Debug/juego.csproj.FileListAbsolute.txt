@@ -9,14 +9,3 @@ C:\Users\carlos b\source\repos\juego\obj\Debug\juego.exe
 C:\Users\carlos b\source\repos\juego\obj\Debug\juego.pdb
 C:\Users\carlos b\source\repos\juego\obj\Debug\juego.Form2.resources
 C:\Users\carlos b\source\repos\juego\obj\Debug\juego.Form3.resources
-C:\Users\Eduardo\Desktop\juego\bin\Debug\juego.exe.config
-C:\Users\Eduardo\Desktop\juego\bin\Debug\juego.exe
-C:\Users\Eduardo\Desktop\juego\bin\Debug\juego.pdb
-C:\Users\Eduardo\Desktop\juego\obj\Debug\juego.csprojAssemblyReference.cache
-C:\Users\Eduardo\Desktop\juego\obj\Debug\juego.Form1.resources
-C:\Users\Eduardo\Desktop\juego\obj\Debug\juego.Form2.resources
-C:\Users\Eduardo\Desktop\juego\obj\Debug\juego.Form3.resources
-C:\Users\Eduardo\Desktop\juego\obj\Debug\juego.Properties.Resources.resources
-C:\Users\Eduardo\Desktop\juego\obj\Debug\juego.csproj.GenerateResource.cache
-C:\Users\Eduardo\Desktop\juego\obj\Debug\juego.exe
-C:\Users\Eduardo\Desktop\juego\obj\Debug\juego.pdb

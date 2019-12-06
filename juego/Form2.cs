@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -11,8 +12,9 @@ using System.Windows.Forms;
 namespace juego
 {
     public partial class Form2 : Form
-    { 
-
+    {
+       // SoundPlayer audio_1 = new SoundPlayer("rival.wav");
+       // SoundPlayer audio = new SoundPlayer("musica.wav");
         string[] ataques_agua = new string[] { "hidrobomba", "Burbuja" };//arreglo de caracteres de los posibles ataques tipo agua
         string[] ataques_fuego = new string[] { "lanzallamas", "fuego" };//arreglo de caracteres de los posibles ataques tipo fuego
         string[] ataques_elect = new string[] { "rayo", "trueno" };//arreglo de caracteres de los posibles ataques tipo electrico
@@ -20,9 +22,10 @@ namespace juego
         string[] mis_ataques = new string[4];//arreglo de caracteres que guarda los ataques del jugador
         string[] ataques_cpu = new string[4];//arreglo de caracteres que guarda los ataques del CPU
         bool turnojugado=false;//variable que indica que el jugador jugo su turno o ataco
+        //variables de tipo boleano que indican el tipo de ataque que fue usado en base a estos se despliega la imagen correspondiente al ataque
         bool ataque_agua, ataque_elect, ataque_planta, ataque_fuego, ataque_agua_cpu, ataque_elect_cpu, ataque_planta_cpu, ataque_fuego_cpu;
-        //variables de tipo que indican el tipo de ataque que fue usado en base a estos se despliega la imagen correspondiente al ataque
-        int posicion_mia,posicion_mia2, posicion_cpu, posicion_cpu2;//variables auxiliares para simular el acercamiento de los pokemon al conecta los golpes
+        //variables auxiliares para simular el acercamiento de los pokemon al conecta los golpes
+        int posicion_mia,posicion_mia2, posicion_cpu, posicion_cpu2;
         int vida_cpu = 100;//puntos de vida de la CPU
         int vida_jugador = 100;//puntos de vida del jugador
 
@@ -32,10 +35,16 @@ namespace juego
             Atacar_cpu();//funcion de ataque de la CPU
         }
 
-        String mi_pokemon;//funcion que indica el pokemon que tiene el jugador
-        String pokemon_cpu;//funcion que inidca el pokemon de la CPU
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+           // audio_1.Stop();
+           // audio.Stop();
+        }
 
-       //uso de sobrecarga de constructores
+        String mi_pokemon;//funcion que indica el pokemon que tiene el jugador
+        String pokemon_cpu;//funcion que indica el pokemon que tiene el CPU
+
+        //uso de sobrecarga de constructores
         public Form2()
         {   //inicializacion de los componentes de la ventana
             InitializeComponent();
@@ -43,22 +52,32 @@ namespace juego
         public Form2(String pokemon_actual)
         {
             mi_pokemon = pokemon_actual;//se recupera el nombre del pokemon traido desde la otra ventana
-            InitializeComponent();//inicializacion de los componentes de la ventana
-
+            //inicializacion de los componentes de la ventana
+            InitializeComponent();
+           
         }
-       //metodo que carga el formulario de la ventana
+
+        //metodo que carga el formulario de la ventana
         private void Form2_Load(object sender, EventArgs e)
         {
             Random rnd = new Random();
             timer1.Start();//inicio del timer del jugador
 
+            //excepciones de audio
+            try
+            {
+
+               // audio_1.Play();
+            }
+            catch (Exception ex)
+            {
+
+            }
 
             //esta parte del codigo representaba la eleccion del pokemon de la CPU
             //dado que el primer rival era el "facil" tendriamos una ventaja elemental contra el 
             // al final se opto por un nivel normal debido al problema con los ataques coordinados del CPU
-            
 
-           
 
             /*if (mi_pokemon == "Blastoise" || mi_pokemon == "Totodile")
             {
@@ -111,14 +130,14 @@ namespace juego
         private void timer1_Tick(object sender, EventArgs e)
         {
             Atacar();//funcion de ataque del jugador
-        
+
         }
         private void Atacar(){
             
           
 
             Random rnd = new Random();//uso de la clase random
-          
+
             if (ataque_agua && turnojugado)//condiciona que evalua el tipo de atque usado y si el turno es del jugador
             {
                 if (mis_ataques[0] == "hidrobomba")//se evalua si el ataque del jugador coincide con un elemento del arreglo de ataque 
@@ -133,10 +152,11 @@ namespace juego
 
                     int reducir = rnd.Next(10, 30);//daño aleatorio segun el ataque 
                     vida_cpu = vida_cpu - reducir;//reduccion de puntos de vida en base al daño
-                    
-                    // apartir de este parte el codigo tiene un funcionamiento similar en base al tipo de ataque que ejecuto
+
 
                 }
+                // apartir de este parte el codigo tiene un funcionamiento similar en base al tipo de ataque que ejecuto
+
                 if (mis_ataques[0] == "Burbuja" && turnojugado)
                 {
                     pictureBox2.Image = Properties.Resources.charizard_frente;
@@ -252,10 +272,8 @@ namespace juego
 
                 
             }
-            //condicional que revisa si el jugador jugo su turno 
             if (turnojugado)
             {
-                //uso de las posiciones anteriormente tomadas para simular que el pokemon regreso a su sitio
                 pictureBox1.Left = posicion_mia;
                 pictureBox1.Top = posicion_mia2;
                 pictureBox2.Left = posicion_cpu;
@@ -267,27 +285,40 @@ namespace juego
             timer2.Start();//inicio del ataque del CPU
             if (vida_cpu <= 0)//condicional que evalua si el CPU puede seguir luchando si se cumple el CPU perdio
             {
+                ///audio_1.Stop();
+
+                try
+                {
+
+                    //audio.Play();
+                }
+                catch (Exception ex)
+                {
+
+                }
                 timer1.Stop();//se detienen ambos timer
                 timer2.Stop();
                 MessageBoxButtons buttons = MessageBoxButtons.OK;//declaracion de un buton de una ventana emergente
                 DialogResult result;//varible usada para mostrar un mensaje en la ventana emergente
 
-                // Displays the MessageBox.
-                result = MessageBox.Show("Haz ganado felicidades", "", buttons);//impresion del mensaje de victoria
+                 result = MessageBox.Show("Haz ganado felicidades", "", buttons);//impresion del mensaje de victoria
                 if (result == System.Windows.Forms.DialogResult.OK)
                 {
                     
                     this.Close();//una vez que se presiona el boton se cierra esta ventana
-                   
+
                 }
             }
             label13.Text = vida_cpu.ToString();//muestra de la vida del pokemon del CPU
-           
+            if (turnojugado)//si el turno del jugador esta activando entonces pasa a ser turno del CPU
+            {
+                label12.Text = "TURNO DE:  CPU";//indicador de la etiqueta de turno
+            }
 
         }
         private void Atacar_cpu()
         {
-          
+           
             Random rnd = new Random();//uso de la clase random
             int aleatorio = rnd.Next(1, 5);//random entre 1 y 4 que son los atques del pokemon
             //condicionales que evaluan el tipo de ataque a usar en base al aleatorio
@@ -308,7 +339,10 @@ namespace juego
                 ataque_fuego_cpu = true;
             }
 
+
+
             //a partir de esta parte el codigo es igual al ataque del jugador
+
             if (ataque_agua_cpu && turnojugado)
             {
                 if (ataques_cpu[0] == "hidrobomba")
@@ -462,19 +496,36 @@ namespace juego
             }
             pictureBox1.Image = Properties.Resources.blastoise;
 
-            if (vida_jugador <= 0)//condicional que evalua la vida del pokemon del jugador si el condicional cumple se accede al codigo en el interior
-            { 
-                timer1.Stop();//se detienen ambos timer
-                timer2.Stop();
-                pictureBox3.Visible = true;//se muestra una pantalla de game over que esta oculta y solo aparece si el jugador pierde
+            if (vida_jugador <= 0)
+            {
+               // audio_1.Stop();
+              
+                try
+                {
 
+                    //audio.Play();
+                }
+                catch (Exception ex)
+                {
+
+                }
+                timer1.Stop();
+                timer2.Stop();
+                pictureBox3.Visible = true;
+               
             }
-            label14.Text = vida_jugador.ToString();//impresion de la vida del pokemon del jugador
+            label14.Text = vida_jugador.ToString();//indicador de puntos de vida del jugador
+            if (!turnojugado)//si el turno del jugador no esta activado se espera su turno
+            {
+                label12.Text = "TURNO DE:  JUGADOR";//indicador de turno
+            }
         }
-       //manejadores de eventos que indican si las teclas fueron presionadas 
+        //manejadores de eventos que indican si las teclas fueron presionadas 
+
         private void Form2_KeyDown(object sender, KeyEventArgs e)
         {
             //cuando una tecla es presiona comienza el turno del jugador y dependiendo de la tecla se usa cierto ataque
+
             if (e.KeyCode == Keys.Left)
             {
                 ataque_agua = true;
@@ -498,9 +549,11 @@ namespace juego
 
         }
         //manejadores de eventos que indican si las teclas fueron soltadas
+
         private void Form2_KeyUp(object sender, KeyEventArgs e)
         {
             //si una tecla es soltada "da por finalizado el turno del jugador" y evita que gane usando solo una tecla
+
             if (e.KeyCode == Keys.Left)
             {
                 ataque_agua = false;

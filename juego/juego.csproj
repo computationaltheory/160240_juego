@@ -99,6 +99,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\teclas.png" />
+    <None Include="Resources\teclado.png" />
     <None Include="Resources\textura.jpg" />
     <None Include="Resources\rival.png" />
     <None Include="Resources\Pueblo_Primavera_HGSS1.png" />
@@ -150,6 +152,9 @@
     <None Include="Resources\game_over_PNG57.png" />
     <None Include="Resources\game.jpg" />
     <None Include="Resources\descarga1.png" />
+    <None Include="Resources\inicial.jpg" />
+    <None Include="Resources\flechas.png" />
+    <None Include="Resources\flecha.jpg" />
     <Content Include="Resources\movimientos-2.png %2810%29.png" />
     <None Include="Resources\movimientos-2.png %2810%291.png" />
     <None Include="Resources\pokemon.jpg" />

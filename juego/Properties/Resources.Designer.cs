@@ -233,6 +233,26 @@ namespace juego.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap flecha {
+            get {
+                object obj = ResourceManager.GetObject("flecha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flechas {
+            get {
+                object obj = ResourceManager.GetObject("flechas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fuego {
             get {
                 object obj = ResourceManager.GetObject("fuego", resourceCulture);
@@ -276,6 +296,16 @@ namespace juego.Properties {
         internal static System.Drawing.Bitmap golpe {
             get {
                 object obj = ResourceManager.GetObject("golpe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap inicial {
+            get {
+                object obj = ResourceManager.GetObject("inicial", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -516,6 +546,26 @@ namespace juego.Properties {
         internal static System.Drawing.Bitmap rival {
             get {
                 object obj = ResourceManager.GetObject("rival", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap teclado {
+            get {
+                object obj = ResourceManager.GetObject("teclado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap teclas {
+            get {
+                object obj = ResourceManager.GetObject("teclas", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
